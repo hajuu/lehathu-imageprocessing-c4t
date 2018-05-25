@@ -204,8 +204,8 @@ def main():
             # if event.type == MOUSEMOTION:
         game.paddles['user'].move((cx,cy-hmax/2))
         game.update()
-        if game.ball.hit_wall():
-            break
+        # if game.ball.hit_wall():
+        #     break
         pygame.display.update()
         fps_clock.tick(fps)
     print('Your score:', game.score.score)
